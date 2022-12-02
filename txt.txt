@@ -1,0 +1,10 @@
+create database student;
+create table students(
+id int(10) primary key auto_increment,
+name varchar(255) not null,
+class varchar(255) not null,
+point_theory int(11),
+evaluate enum('not achieved','achieved'),
+point_practice int,
+describe_student mediumtext
+ );
