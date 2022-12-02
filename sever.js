@@ -20,7 +20,7 @@ const sever = http.createServer((req, res) => {
             studentController.showInfoStudent(req, res);
             break;
         case '/add/student':
-            studentController.addProduct(req, res);
+            studentController.addStudent(req, res);
             break;
             default:
             res.end()

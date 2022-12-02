@@ -107,7 +107,7 @@ class StudentController extends BaseController {
             res.write(data);
             res.end();
         }
-    async addProduct(req, res) {
+    async addStudent(req, res) {
         let urlPath = req.method
         if (urlPath === 'GET') {
             let dataRegister = await _handle.getTemplate('./view/addStudent.html')
